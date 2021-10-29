@@ -25,5 +25,8 @@ os.chdir('/kaggle')
 #從要抓資料集的檔案 copy API command
 !kaggle datasets download -d shaunthesheep/microsoft-catsvsdogs-dataset
 
-
 !ls /kaggle
+
+
+#解壓縮dataset.zip
+!unzip 'zip位置' -d '目的地'
