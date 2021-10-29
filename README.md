@@ -5,6 +5,7 @@
 kaggle > My Account > create new API token
 
 
+
 api_token = {"username":"XXXX","key":"XXXXX"}
 import json
 import zipfile
@@ -20,6 +21,9 @@ with open('/root/.kaggle/kaggle.json', 'w') as file:
 if not os.path.exists("/kaggle"):
     os.makedirs("/kaggle")
 os.chdir('/kaggle')
-!kaggle datasets download -d chetankv/要抓的資料集名稱 --force
- 
+
+#從要抓資料集的檔案 copy API command
+!kaggle datasets download -d shaunthesheep/microsoft-catsvsdogs-dataset
+
+
 !ls /kaggle
