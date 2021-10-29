@@ -5,7 +5,7 @@
 kaggle > My Account > create new API token
 
 
-
+```python
 api_token = {"username":"XXXX","key":"XXXXX"}
 import json
 import zipfile
@@ -29,4 +29,7 @@ os.chdir('/kaggle')
 
 
 #解壓縮dataset.zip
+
 !unzip 'zip位置' -d '目的地'
+
+```python
